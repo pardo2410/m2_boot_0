@@ -1,0 +1,14 @@
+-------------------- Total a Pagar Zoo ----------------------
+ 1 entradas de baby ($0): $0.00
+ 1 entradas de menores ($14): $14.00
+ 0 entradas normales ($23): $0.00
+ 0 entradas de jubilados ($18): $0.00
+ -------------------------------------------------------------
+ 2 Total entradas: $14.00
+-------------------- Total a Pagar Zoo ----------------------
+ 0 entradas de baby ($0): $0.00
+ 0 entradas de menores ($14): $0.00
+ 2 entradas normales ($23): $46.00
+ 1 entradas de jubilados ($18): $18.00
+ -------------------------------------------------------------
+ 3 Total entradas: $64.00
