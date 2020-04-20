@@ -1,4 +1,5 @@
 # Valor Maximo
+
 def maxi(l): #*l es una lista
     if len(l) == 0:
         return 0
@@ -7,7 +8,9 @@ def maxi(l): #*l es una lista
         if l[ix] > m:
             m = l[ix]
     return m
+
 # Valor Minimo
+
 def mini(l): #*l es una lista
     if len(l) == 0:
         return 0
@@ -16,14 +19,18 @@ def mini(l): #*l es una lista
         if l[ix] < m:
             m = l[ix]
     return m
+
 # Calculo de la media
-def media(l): #*l es una lista
+
+def media(l): #l es una lista
     if len(l) == 0:
         return 0
     suma = 0
     for valor in l:
         suma += valor
     return suma/len(l)
+
+#Creaccion de diccionario de prueba
 
 lista = []
 num=1
@@ -33,9 +40,26 @@ while num != 0:
 
 lista.remove(0)
 
-print('-----------Resultados-----------')
-print('La lista de valores es la siguiente: ',lista)
-print('El numero de elementos ingresados es de: ',len(lista))
-print('El valor Maximo es: ',maxi(lista))   
-print('El valor minimo es: ',mini(lista))
-print('La media de los valores es: ',media(lista))
+funciones = {
+    'max':maxi(lista),
+    'min':mini(lista),
+    'med':media(lista)
+}
+
+def returnF(nombre):
+    nombre = nombre.lower()
+    if nombre in funciones.keys():
+        return funciones[nombre]
+    return None
+
+selecF=input('Escriba max, min, med o todos para realizar las operaciones: ')
+if selecF == 'todos' or selecF == 'Todos':
+
+    print('-----------Resultados-----------')
+    print('La lista de valores es la siguiente: ',lista)
+    print('El numero de elementos ingresados es de: ',len(lista))
+    print('El valor Maximo es: ',maxi(lista))   
+    print('El valor minimo es: ',mini(lista))
+    print('La media de los valores es: ',media(lista))
+else:
+   print('El valor solicitado es: ',returnF(selecF))
