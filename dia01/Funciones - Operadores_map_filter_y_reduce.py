@@ -26,3 +26,13 @@ print('media ',sumatoria/len(lista))
 
 suma100 = reduce(lambda x,y: x + y,range(101))
 print(suma100)
+
+
+
+def productoTotal(x):
+    resultado = 1
+    for valor in x:
+        resultado *= valor
+    return resultado
+prodTotal = productoTotal(lista)
+print(prodTotal)
