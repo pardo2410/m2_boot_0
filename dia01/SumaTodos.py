@@ -15,8 +15,8 @@ def sumaTodosLosCubos(limit):
     for i in range(limit+1):
         resultado += i**3
     return resultado
-
-Num=int(input('ingrese un numero '))
-print('Suma Todo ',sumaTodos(Num))
-print('SumaTodos los Cuadrados ',sumaTodosLosCuadrados(Num))
-print('SumaTodos los Cubos ',sumaTodosLosCubos(Num))
+if __name__=='__main__':
+    Num=int(input('ingrese un numero '))
+    print('Suma Todo ',sumaTodos(Num))
+    print('SumaTodos los Cuadrados ',sumaTodosLosCuadrados(Num))
+    print('SumaTodos los Cubos ',sumaTodosLosCubos(Num))
