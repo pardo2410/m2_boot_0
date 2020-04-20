@@ -10,13 +10,15 @@ def sumaTodosLosCuadrados(limit):
     for i in range(limit+1):
         resultado += i*i
     return resultado
+
 def sumaTodosLosCubos(limit):
     resultado=0
     for i in range(limit+1):
         resultado += i**3
     return resultado
 
-Num=int(input('ingrese un numero '))
-print('Suma Todo ',sumaTodos(Num))
-print('SumaTodos los Cuadrados ',sumaTodosLosCuadrados(Num))
-print('SumaTodos los Cubos ',sumaTodosLosCubos(Num))
+def sumaTodos2(limit,f):
+    resultado=0
+    for i in range(limit+1):
+        resultado+=f(i)
+    return resultado
