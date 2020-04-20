@@ -30,7 +30,7 @@ def media(l): #l es una lista
         suma += valor
     return suma/len(l)
 
-#Creaccion de diccionario de prueba
+
 
 lista = []
 num=1
@@ -40,6 +40,7 @@ while num != 0:
 
 lista.remove(0)
 
+#funcion de nivel superior pues admite como parametro otras funciones
 funciones = {
     'max':maxi(lista),
     'min':mini(lista),
