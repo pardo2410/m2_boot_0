@@ -27,7 +27,7 @@ print('media ',sumatoria/len(lista))
 suma100 = reduce(lambda x,y: x + y,range(101))
 print(suma100)
 
-
+#Acumular multiplos
 
 def productoTotal(x):
     resultado = 1
